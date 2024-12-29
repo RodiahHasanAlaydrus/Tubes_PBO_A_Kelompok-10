@@ -47,6 +47,7 @@ public class ReservationController {
         mainLayout.getChildren().addAll(searchMoviesButton, buyTicketsButton, manageReservationsButton);
     
         Scene scene = new Scene(mainLayout, 400, 400);
+        scene.getStylesheets().add(getClass().getResource("./css/mainScreen.css").toExternalForm());
         mainLayout.setAlignment(javafx.geometry.Pos.CENTER);
         primaryStage.setTitle("Aplikasi Reservasi Bioskop Tixtastic");
         primaryStage.setScene(scene);
@@ -174,6 +175,7 @@ public class ReservationController {
         );
     
         Scene scene = new Scene(layout, 400, 400);
+        scene.getStylesheets().add(getClass().getResource("./css/bookingTiket.css").toExternalForm());
         buyStage.setTitle("Booking Tiket");
         buyStage.setScene(scene);
         buyStage.setResizable(false);
