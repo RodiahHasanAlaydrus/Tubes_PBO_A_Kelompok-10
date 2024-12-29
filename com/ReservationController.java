@@ -91,6 +91,7 @@ public class ReservationController {
         layout.getChildren().addAll(new Label("Masukkan Judul Film:"), movieTitleField, searchButton, resultLabel, backButton);
 
         Scene scene = new Scene(layout, 400, 400);
+        scene.getStylesheets().add(getClass().getResource("./css/searchFilm.css").toExternalForm());
         layout.setAlignment(javafx.geometry.Pos.CENTER);
         searchStage.setTitle("Pencarian Film");
         searchStage.setScene(scene);
@@ -241,6 +242,7 @@ public class ReservationController {
         );
     
         Scene scene = new Scene(layout, 400, 400);
+        scene.getStylesheets().add(getClass().getResource("./css/managemenReservasi.css").toExternalForm());
         manageStage.setTitle("Managemen Reservasi");
         manageStage.setScene(scene);
         manageStage.show();
