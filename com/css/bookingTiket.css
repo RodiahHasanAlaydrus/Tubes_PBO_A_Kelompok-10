@@ -1,0 +1,104 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #0d47a1, #64b5f6);
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: "Comic Sans MS", cursive;
+    -fx-font-weight: bold;
+    -fx-padding: 2px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 2, 0, 2, 2);
+}
+
+.discount-label {
+    -fx-text-fill: green;
+    -fx-font-size: 11px;
+    -fx-font-family: "Comic Sans MS", cursive;
+    -fx-font-style: italic;
+    -fx-padding: 2px 0;
+}
+
+.text-field {
+    -fx-background-color: #fffbe7;
+    -fx-text-fill: #333;
+    -fx-font-size: 12px;
+    -fx-padding: 5px;
+    -fx-border-color: #0d47a1;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-max-width: 300px;
+}
+
+.combo-box {
+    -fx-background-color: #fffbe7;
+    -fx-text-fill: #333;
+    -fx-font-size: 12px;
+    -fx-padding: 5px;
+    -fx-border-color: #0d47a1; 
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-max-width: 300px; 
+}
+
+.button {
+    -fx-background-color: #0d47a1;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: "Arial Rounded MT Bold", sans-serif;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px; 
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #64b5f6; 
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 4, 0, 3, 3);
+    -fx-transform: scale(1.05); 
+}
+
+.button:pressed {
+    -fx-background-color: #002171; 
+}
+
+.ticket-price-label {
+    -fx-text-fill: yellow;
+    -fx-font-size: 12px;
+    -fx-font-family: "Comic Sans MS", cursive;
+    -fx-font-weight: bold;
+    -fx-padding: 2px 0;
+}
+
+.vbox {
+    -fx-spacing: 8px;
+    -fx-alignment: center;
+}
+
+.result-label {
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-padding: 2px 0;
+}
+
+.button-back {
+    -fx-background-color: #64b5f6;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-font-family: "Arial Rounded MT Bold", sans-serif;
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button-back:hover {
+    -fx-background-color: #003c8f;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 4, 0, 3, 3);
+}
+
+.button-back:pressed {
+    -fx-background-color: #002171;
+}
