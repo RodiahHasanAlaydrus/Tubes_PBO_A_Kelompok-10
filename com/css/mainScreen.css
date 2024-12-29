@@ -1,0 +1,48 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #0d47a1, #64b5f6); /* Deep blue to light blue gradient */
+    -fx-padding: 20px;
+}
+
+.image-view {
+    -fx-fit-width: 150px;
+    -fx-fit-height: 150px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0, 2, 2);
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 2, 0, 2, 2);
+}
+
+.button {
+    -fx-background-color: #0d47a1;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial Rounded MT Bold", sans-serif;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0, 2, 2);
+}
+
+.button:hover {
+    -fx-background-color: #64b5f6;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 6, 0, 3, 3);
+    -fx-transform: scale(1.05); 
+}
+
+.button:pressed {
+    -fx-background-color: #002171;
+}
+
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+}
