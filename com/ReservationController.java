@@ -4,8 +4,10 @@ import java.util.List;
 
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.scene.image.ImageView;
 
 public class ReservationController {
 
@@ -26,6 +28,11 @@ public class ReservationController {
     public void showMainMenu() {
         VBox mainLayout = new VBox(10); 
         mainLayout.setStyle("-fx-padding: 20px;");
+
+        Image logoImage = new Image(getClass().getResource("TixtasticLogo-removebg-preview.png").toExternalForm());
+        ImageView logoImageView = new ImageView(logoImage);
+        logoImageView.setFitWidth(400); 
+        logoImageView.setPreserveRatio(true);
     
         Button searchMoviesButton = new Button("Pencarian Film");
         Button buyTicketsButton = new Button("Booking Tiket");
@@ -44,7 +51,7 @@ public class ReservationController {
             showManageReservationsScreen();
         });
     
-        mainLayout.getChildren().addAll(searchMoviesButton, buyTicketsButton, manageReservationsButton);
+        mainLayout.getChildren().addAll(logoImageView, searchMoviesButton, buyTicketsButton, manageReservationsButton);
     
         Scene scene = new Scene(mainLayout, 400, 400);
         scene.getStylesheets().add(getClass().getResource("./css/mainScreen.css").toExternalForm());
